@@ -1,5 +1,6 @@
 {
   "name": "blogapp",
+  "homepage": "http://superashishb.github.io/blogapp",
   "version": "1.0.0",
   "description": "",
   "start": "app.js",
