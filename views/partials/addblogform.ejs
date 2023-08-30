@@ -1,0 +1,54 @@
+<form action="/addblog" method="POST">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Blog Title</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="title" placeholder="Your Blog Name.." value="">
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+          <label for="lname">Blog Image</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="imageUrl" placeholder="Your Blog Image.."  value="">
+        </div>
+      </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Blog Author</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="author" placeholder="Author Name.." value="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="product">Blog Category</label>
+      </div>
+      <div class="col-75">
+        <select id="product" name="category" >
+        <option value="Sports" >Sports</option>
+        <option value="education" >education</option>
+        <option value="Technology" >Technology</option>
+        <option value="Science" >Science</option>
+        <option value="Food" >Food</option>
+        <option value="Nature" >Nature</option>
+
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Blog Description</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="description" placeholder="Write Blog Description.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <input type="hidden" name="id" value="">
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>

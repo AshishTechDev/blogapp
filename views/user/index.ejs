@@ -1,0 +1,106 @@
+<%- include('../partials/header.ejs') %>
+<link rel="stylesheet" href="/css/container.css">
+<link rel="stylesheet" href="/css/blog-container.css">
+<link rel="stylesheet" href="/css/carousel.css">
+<link rel="stylesheet" href="/css/wrapper.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+<script src="/js/carousel.js" ></script>
+<script src="/js/wrapper.js" defer></script>
+</head>
+  <body>
+    <%- include('../partials/navbar.ejs') %>
+    <%- include('../partials/container.ejs') %>
+
+    <!-- <section class="blog-section">
+
+      <div class="heading">
+       <h3><%- title %></h3>
+       <hr>
+      </div>
+      <div class="blogs">
+          <% if(blogs.length > 0) {%>
+       <div class="blogs-card">
+          <% for(let blog of blogs) {%>
+                 <article class="card" >
+                  <a href="/blog-details/<%= blog._id %>">
+                   <div class="image-box">
+                       <img src="<%= blog.imageUrl %>" >
+                   </div>
+                   <div class="details">
+                     <span><%= blog.category %></span>
+                       <h2><%= blog.title %></h1>
+                       <p>
+                          <%= blog.description %>
+                       </p>   
+                   </div>
+                   <div class="buttons">
+                     <div class="profile">
+                       <img src="/images/home/user.png" alt="">
+                     </div>
+                     <div class="author">
+                       <span>Written by <b><%= blog.author %></b></span>
+                     </div>
+                   </div>
+                  </a>
+               </article>
+               <% }%>
+         </div>
+         <% } else {%>
+          <h1>No blogs</h1>
+          <% } %>
+      </div>
+   </section> -->
+   <div class="body1">
+   <div class="wrapper">
+    <i class="fa-solid fa-angle-left"></i>
+    <ul class="carousels">
+      <li class="cards">
+        <div class="imgs">
+          <img src="/images/crousal1.jpg" alt="">
+        </div>
+        <h2>BLDFE SERC</h2>
+        <span>sales manger</span>
+      </li>
+      <li class="cards">
+        <div class="imgs">
+          <img src="/images/crousal2.jpg" alt="">
+        </div>
+        <h2>BLDFE SERC</h2>
+        <span>sales manger</span>
+      </li>
+      <li class="cards">
+        <div class="imgs">
+          <img src="/images/crousal3.jpg" alt="">
+        </div>
+        <h2>BLDFE SERC</h2>
+        <span>sales manger</span>
+      </li>
+      <li class="cards">
+        <div class="imgs">
+          <img src="/images/crousal1.jpg" alt="">
+        </div>
+        <h2>BLDFE SERC</h2>
+        <span>sales manger</span>
+      </li>
+      <li class="cards">
+        <div class="imgs">
+          <img src="/images/crousal2.jpg" alt="">
+        </div>
+        <h2>BLDFE SERC</h2>
+        <span>sales manger</span>
+      </li>
+      <li class="cards">
+        <div class="imgs">
+          <img src="/images/crousal3.jpg" alt="">
+        </div>
+        <h2>BLDFE SERC</h2>
+        <span>sales manger</span>
+      </li>
+    </ul>
+    <i class="fa-solid fa-angle-right"></i>
+   </div>
+  </div>
+   
+
+
+    <%- include('../partials/footer.ejs') %>

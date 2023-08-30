@@ -1,0 +1,23 @@
+<%- include('../partials/header.ejs') %>
+<link rel="stylesheet" href="/css/blog-details.css">
+  </head>
+  <body>
+    <%- include('../partials/navbar.ejs') %>
+    <div class="blog-details-container">
+        <div class="blog-details" id="text">
+            <h1><%=blog.title%> - (<%= blog.category %>)</h1>
+            <img src="<%= blog.imageUrl %>" alt="">
+            <p><%= blog.description %></p>
+            <span><%= blog.author %></span>
+        </div>
+    </div>
+    <div class="set-font">
+        <div class="buttons">
+            <span class="btn active" onclick="setfont('1em')">A</span>
+            <span class="btn" onclick="setfont('1.25em')">A</span>
+            <span class="btn" onclick="setfont('1.55em')">A</span>
+        </div>
+    </div>
+
+    <script src="/js/blog-details.js"></script>
+    <%- include('../partials/footer.ejs') %>

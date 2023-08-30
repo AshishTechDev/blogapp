@@ -1,0 +1,77 @@
+.banner-slider {
+    width: 100%;
+    height: 75vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px ;
+}
+.section1 {
+    width: 55%;
+    height: 100%;
+    /* background-color: aqua; */
+    margin: 10px;
+}
+.section2 {
+    width: 45%;
+    height: 80%;
+    /* background-color: blueviolet; */
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+.section-box > h4 , .section-box > h3,.section-box > p, .section-box > .button {
+    /* display: block; */
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: large;
+    padding: 10px;
+    text-align: center;
+    /* background-color: antiquewhite; */
+}
+
+.section-box > h4 {
+    font-size: 2rem;
+}
+.section-box > h3 {
+    font-size: 3rem;
+}
+
+.section-box > p {
+    width: 80%;
+    text-align: left;
+}
+
+.section-box > .button {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.section-box > .button > a {
+    display: block;
+    background-color: rgb(7, 4, 32);
+    color: white;
+    text-decoration: none;
+    height: 100%;
+    width: 10rem ;
+    padding: 10px;
+    box-shadow: 1px 2px 3px 2px rgba(0, 0, 0, 0.473);
+}
+.button > a:hover {
+    background-color: rgb(13, 11, 31);
+    box-shadow: 2px 3px 2px 1px rgba(0, 0, 0, 0.473);
+
+}

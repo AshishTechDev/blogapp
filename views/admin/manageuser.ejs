@@ -1,0 +1,40 @@
+<%- include('../partials/header.ejs') %>
+<link rel="stylesheet" href="/css/manageuser.css">
+
+  </head>
+  <body>
+    <%- include('../partials/navbar.ejs') %>
+    <div class="Admin-section">
+      <h1 class="heading">Manage User Data</h2>
+          <div class="admin-div">
+            <% if(users.length > 0) { %>
+                      <table id="admin-table" border="1">
+                         <tr>
+                          <th>User Name</th>
+                          <th>User Email</th>
+                          <th>No of Blogs</th>
+                          <th></th>
+                         </tr>
+
+                         <% for(let user of users) {%>
+                            <tr>
+                          <td><%= user.name %></td>
+                          <td><%= user.email %></td>
+                          <td><%= user.Blogs.length %></td>
+                          <td>
+                              <form onsubmit="deleteUser(event)">
+                                  <input type="hidden" name="userId" value="">
+                                  <Button class="btn" disabled>Delete </Button>
+                              </form>
+                          </td>
+                         </tr>
+                         <% } %>
+                      </table>
+            <% } else { %>
+                <h2>No Users</h2>
+                <% } %>
+          </div>
+              <!-- <div style="height: 81vh; width: 100%; text-align: center;">
+                  <h1 style="margin-top: 10%;"> Currently No User have Register!</h1>
+              </div> -->
+  </div>    <%- include('../partials/footer.ejs') %>

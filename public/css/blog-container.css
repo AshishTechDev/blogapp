@@ -1,0 +1,173 @@
+section {
+    background-color: rgb(15, 15, 15);
+    width: 100%;
+    height:auto ;
+    min-height: 50vh;
+}
+section .heading {
+    color: white;
+    font-size: 2rem;
+    padding: 2rem;
+    /* background-color: aquamarine; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+section hr {
+    color: aliceblue;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+section .blogs {
+    /* background-color: aqua; */
+    width: 100%;
+    height: auto;
+}
+
+  /* blogs card --------------------------------------------------- */
+
+.blogs-card {   
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;    
+      } 
+      .card {
+        background-color: white;
+        width: 30rem;
+        height: 38rem;
+        margin: 2rem 1rem;
+        box-shadow: 0.8px 0.5px 10px 0.8px rgba(48, 47, 47, 0.486);
+        transition: all 0.4s ease-in-out;
+        border-radius: 5px ;
+        padding: 0.6px ;
+      }
+  
+      .card:hover {
+        transform: scale(101%);
+
+      }
+  
+      .image-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        object-fit: contain;
+        width: 100%;
+        height: 300px;
+        border-radius: 8px 8px 0px 0px ;
+        padding: 0.6px ;
+
+
+      }
+  
+      .card img {
+        height: 100%;
+          width: 100%;
+          border-radius: 8px 8px 0px 0px ;
+
+      }
+  
+      .card .details {
+        padding: 1rem;
+        text-align: center;
+        color: #262525;
+        height: 40%;
+        display: flex;
+        /* justify-content:space-around; */
+        align-items: center;
+        flex-direction: column;
+      }
+  
+      .details > span {
+        background-color: green;
+        color: white;
+        border-radius: 10px;
+        padding: 2px 6px;
+        font-size: 0.8rem;
+      }
+
+      .details > h2 {
+        font-size: 1.8rem;
+        margin-bottom: 0.8rem;
+      }
+  
+    
+      .details > p {
+        text-align: left;
+        max-width: 90%;
+        max-height: 70%;
+        overflow: hidden;
+      }
+  
+      .buttons{
+        height: 10%;
+        width: 100%;
+        display: flex;
+        justify-content:center;
+        padding: 5px;
+        align-items: center;
+      }
+      .buttons > .profile {
+        border: 1px solid black ;
+        border-radius: 50%;
+      }
+
+      .buttons > .profile > img{
+        width: 30px;
+      }
+
+
+      .buttons > .author {
+        display: flex;
+        justify-content:center;
+        padding: 10px;
+      }
+  
+      
+  .btn {
+    display: inline-block;
+    padding: 0.45rem 0.5rem;
+    text-decoration: none;
+    background-color: rgb(43, 42, 42);
+    color: rgb(255, 255, 255);
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1rem !important;
+    transition: all 0.4s ease-in-out;
+    font-weight: 400;
+    width: 42%;
+  }
+  
+  .btn:hover,
+  .btn:active {
+    background: rgb(10, 10, 10);
+    color: white;
+  }
+
+  .Delete-edit {
+    height: 10%;
+        width: 100%;
+        display: flex;
+        justify-content:space-around ;
+        padding: 5px 20px;
+        align-items:center ;
+
+  }
+
+  .Delete-edit > a:nth-child(1) {
+    background-color: rgb(13, 202, 76);
+    color: white;
+    padding: 7px 10px;
+    box-shadow: 3px 2px 5px 2px rgba(0, 0, 0, 0.377) ;
+  }
+  .Delete-edit > a:nth-child(2) {
+    background-color: rgb(253, 56, 56);
+    box-shadow: 3px 2px 5px 2px rgba(0, 0, 0, 0.377) ;
+    color: white;
+    padding: 7px 10px;
+  }

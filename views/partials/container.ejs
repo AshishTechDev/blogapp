@@ -1,0 +1,25 @@
+ <!-- revolution slider -->
+ <div class="banner-slider">
+   <div class="section1">
+    <%- include('../partials/carousel.ejs') %>
+   </div>
+   <div class="section2">
+    <div class="section-box">
+        <h4>Looking For Blogging ?</h4>
+        <h3>LETS TRY TRENDBLOG APP</h3>
+        <p>
+            It is a long established fact that a reader will be distracted by the readable 
+            content of a page when looking at it's layout.The point of using Lorem Ipsum is
+             that it has a more-or-less normal distribution of letters.
+        </p>
+        <div class="button">
+            <% if(isAuthenticated) { %> 
+                <a href="/addblog">POST A BLOGS</a>
+                <% } else { %>
+            <a href="/login">LET'S START</a>
+            <% } %>
+        </div>
+    </div>
+   </div>
+ </div>
+ <!-- end revolution slider -->

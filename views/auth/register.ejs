@@ -1,0 +1,25 @@
+<%- include('../partials/header.ejs') %>
+<link rel="stylesheet" href="/css/login.css">
+  </head>
+  <body>
+    <%- include('../partials/navbar.ejs') %>
+    <div class="login-container">
+        <div class="heading">
+            <h3><%- title %></h3>
+           </div>
+        <form action="/signup" method="POST">  
+            <div class="container">
+                <label>Your Name : </label>   
+                <input type="text" placeholder="Enter Your Name" name="name" required>     
+                <label>Email : </label>   
+                <input type="text" placeholder="Enter Email" name="email" required>  
+                <label>Password : </label>   
+                <input type="password" placeholder="Enter Password" name="password" required>  
+                <label>Confirm Password : </label>   
+                <input type="password" placeholder="Confirm Password" name="cpassword" required>  
+                <button type="submit">Signup</button>  
+            </div>   
+        </form>
+    </div>
+    
+    <%- include('../partials/footer.ejs') %>

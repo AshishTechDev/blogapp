@@ -1,0 +1,58 @@
+.login-container {
+    width: 100%;
+    min-height: 90vh;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    background-color: transparent;
+}
+.login-container .heading {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.login-container > form {
+    width: 50%;
+}
+
+.login-container button {   
+    background-color: #191a19;   
+    width: 100%;  
+     color: rgb(255, 255, 255);   
+     padding: 15px;   
+     margin: 10px 0px;   
+     border: none;   
+     cursor: pointer;   
+      }   
+.login-container form {   
+     border: 3px solid #f1f1f1;   
+ }   
+.login-container input[type=text], input[type=password] {   
+     width: 100%;   
+     margin: 12px 0;  
+     padding: 12px 20px;   
+     display: inline-block;   
+     border: 2px solid rgb(85, 85, 85);   
+     box-sizing: border-box; 
+     transition: 0.5s;  
+ }  
+.login-container button:hover {   
+     opacity: 0.7;   
+ }   
+.login-container .cancelbtn {   
+     width: auto;   
+     padding: 10px 18px;  
+     margin: 10px 5px;  
+ }   
+     
+  
+.login-container .container { 
+    width: 100%;  
+     padding: 25px;   
+     background-color: rgb(255, 255, 255);  
+ }   
